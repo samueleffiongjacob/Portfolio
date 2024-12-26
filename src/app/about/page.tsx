@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card'
 import Image from 'next/image'
-import Images from '@/image/GRW_9832.JPG'
+import Images from '@/image/logo.JPG'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faTwitter, faFacebook, faInstagram, faGithub, faWhatsapp, faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -48,28 +48,28 @@ export default function AboutPage() {
              {/* Social Media Links */}
              <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-inner">
               <div className="flex flex-wrap justify-center gap-6">
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
+                <a href="https://www.linkedin.com/in/samueleffiongjacob/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
                   <FontAwesomeIcon icon={faLinkedin} className="h-15 w-45" />
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition-colors">
+                <a href="https://twitter.com/samueleffiong_" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition-colors">
                   <FontAwesomeIcon icon={faTwitter} className="h-15 w-45" />
                 </a>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 transition-colors">
+                <a href="https://www.facebook.com/samueleffiongjacob/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 transition-colors">
                   <FontAwesomeIcon icon={faFacebook} className="h-15 w-45" />
                 </a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800 transition-colors">
+                <a href="https://www.instagram.com/samueleffiong0" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800 transition-colors">
                   <FontAwesomeIcon icon={faInstagram} className="h-15 w-45" />
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-700 transition-colors">
+                <a href="https://github.com/samueleffiongjacob" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-700 transition-colors">
                   <FontAwesomeIcon icon={faGithub} className="h-15 w-45" />
               </a>
-                <a href="mailto:your.email@example.com" className="text-gray-800 hover:text-gray-600 transition-colors">
+                <a href="mailto:samueleffiongjacob@gmail.com" className="text-gray-800 hover:text-gray-600 transition-colors">
                   <FontAwesomeIcon icon={faEnvelope} className="h-15 w-45" />
                 </a>
-                <a href="https://wa.me/yourwhatsappphonenumber" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-700 transition-colors">
+                <a href="https://wa.link/506m3b" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-700 transition-colors">
                   <FontAwesomeIcon icon={faWhatsapp} className="h-15 w-45" />
                 </a>
-                <a href="https://t.me/yourtelegram" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition-colors">
+                <a href="https://t.me/Samueleffiong_official" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition-colors">
                   <FontAwesomeIcon icon={faTelegram} className="h-15 w-45" />
                 </a>
               </div>
