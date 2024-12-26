@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import animatePlugin from 'tailwindcss-animate'
 
 export default {
     darkMode: ["class"],
@@ -49,7 +50,25 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+
+			animation: {
+				'spin-slow': 'spin 3s linear infinite',
+				'fade-in': 'fadeIn 1s ease-in-out',
+        		'text-gradient': 'gradient 3s ease infinite',
+			},
+
+			keyframes: {
+				fadeIn: {
+				  '0%': { opacity: '0' },
+				  '100%': { opacity: '1' },
+				},
+				gradient: {
+				  '0%': { backgroundPosition: '0% 50%' },
+				  '50%': { backgroundPosition: '100% 50%' },
+				  '100%': { backgroundPosition: '0% 50%' },
+				},
+			},
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -58,5 +77,6 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+//   plugins: [require("tailwindcss-animate")],
+  	plugins:  [animatePlugin,]
 } satisfies Config;
