@@ -1,7 +1,14 @@
+import type { Metadata } from 'next'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import Link from 'next/link'
 import { GitBranch, Cloud, BarChart, Terminal, Database, Network, Code, Layers, Activity } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Home',
+  description: 'Welcome to Samuel Effiong\'s portfolio. Explore my skills in DevOps, cloud technologies, software engineering, Statistics and data analyst & Science.',
+}
+
 
 export default function HomePage() {
   return (
@@ -21,12 +28,12 @@ export default function HomePage() {
             {/* Short Text for Small Screens */}
             <div className="text-opacity-90 sm:text-xl pb-8">
               <p className="text-2xl leading-relaxed break-words block md:hidden">
-                Recent Statistics graduate from the Federal University of Technology and certified software engineer via ALX Africa. I specialize in building secure, scalable data pipelines and handling sensitive data with compliance. Proficient in PHP, Golang, Node.js, Python, AWS, Kubernetes, RESTful APIs, and SQL/NoSQL databases, I excel in optimizing data systems and integrating them with legacy infrastructure.
+                Experienced software engineer and certified AI data annotator with a strong background in Statistics. Proficient in developing secure, scalable pipelines for processing complex data efficiently while ensuring compliance with industry regulations. Expertise includes PHP, Golang, Node.js, Python, AWS, Kubernetes, RESTful APIs, and SQL/NoSQL databases. Skilled in handling sensitive data, optimizing performance, and integrating modern systems with legacy infrastructure to deliver robust, scalable, and secure solutions.
               </p>
 
               {/* Original Text for Larger Screens */}
               <p className="text-2xl  leading-relaxed break-words hidden md:block">
-                As a recent graduate in Statistics from the Federal University of Technology, and a certified software engineer and AI data annotator through ALX Africa, I’ve excelled in environments where data complexity, scalability, and security are critical. In my previous roles, I developed secure, scalable pipelines capable of processing millions of data points with high efficiency. I am proficient in handling sensitive data and ensuring compliance with industry regulations. With expertise in PHP, Golang, Node.js, Python, cloud technologies (AWS, Kubernetes), RESTful APIs, and SQL/NoSQL databases, I am well-equipped to contribute to any company’s sophisticated data systems while ensuring top-tier security, performance, and system integration with legacy infrastructure.
+                Experienced software engineer and certified AI data annotator with a strong background in Statistics. Proficient in developing secure, scalable pipelines for processing complex data efficiently while ensuring compliance with industry regulations. Expertise includes PHP, Golang, Node.js, Python, AWS, Kubernetes, RESTful APIs, and SQL/NoSQL databases. Skilled in handling sensitive data, optimizing performance, and integrating modern systems with legacy infrastructure to deliver robust, scalable, and secure solutions.
               </p>
             </div>
          

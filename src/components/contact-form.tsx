@@ -286,7 +286,7 @@ export function ContactForm({ className }: React.ComponentProps<typeof Card>) {
                 <a href="https://www.linkedin.com/in/samueleffiongjacob/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
                   <FontAwesomeIcon icon={faLinkedin} className="h-10 w-8" />
                 </a>
-                <a href="https://twitter.com/samueleffiong_" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition-colors">
+                <a href="https://x.com/samueleffiong_" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition-colors">
                   <FontAwesomeIcon icon={faTwitter} className="h-10 w-8" />
                 </a>
                 <a href="https://www.facebook.com/samueleffiongjacob/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 transition-colors">
@@ -373,7 +373,7 @@ export function ContactForm({ className }: React.ComponentProps<typeof Card>) {
                 id="phone"
                 name="phone"
                 type="tel"
-                placeholder="1234567890"
+                placeholder="+234 8166907845"
                 className="group-data-[invalid=true]/field:border-destructive focus-visible:group-data-[invalid=true]/field:ring-destructive"
                 aria-invalid={!!state.errors?.phone}
                 aria-errormessage="error-phone"
@@ -409,7 +409,7 @@ export function ContactForm({ className }: React.ComponentProps<typeof Card>) {
               )}
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="pdfFile">PDF File (optional)</Label>
+              <Label htmlFor="pdfFile">Attach any valid PDF File (optional) for project</Label>
               <Input
                 id="pdfFile"
                 name="pdfFile"

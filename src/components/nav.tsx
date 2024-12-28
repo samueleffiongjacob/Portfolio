@@ -2,9 +2,11 @@
 
 import * as React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
 import { Home, User, Mail, Menu, X } from 'lucide-react'
+import Images from '@/image/samuel-effiong.JPG'
 
 export function Nav() {
   const pathname = usePathname()
@@ -20,7 +22,8 @@ export function Nav() {
         {/* Logo and Nav Links (centered for desktop) */}
         <div className="flex items-center space-x-8 md:mx-auto">
           <Link href="/" className="mr-6 flex items-center space-x-2 text-xl">
-            <span className="hidden font-bold sm:inline-block">DevOps Portfolio</span>
+            <Image src={Images} alt="Logo" width={25} height={20} className="rounded-full" />
+            <span className="font-bold sm:inline-block">Samuel Effiong</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8 text-base font-medium">
             <Link
