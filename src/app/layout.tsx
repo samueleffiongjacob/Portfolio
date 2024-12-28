@@ -17,8 +17,44 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'DevOps Portfolio',
+  title: 'Samuel Effiong - Software Engineer,DevOps, Statistician, Data Science and Analyst Portfolio',
   description: 'Software Engineer, DevOps Engineer, Statistician, Data Science and Analyst Portfolio',
+  keywords: ['DevOps', 'Software Engineer', 'Cloud Infrastructure', 'Data Analysis', 'Portfolio'],
+  authors: [{ name: 'Samuel Effiong' }],
+  openGraph: {
+    title: 'Samuel Effiong - DevOps Portfolio',
+    description: 'Software Engineer, DevOps Engineer, and Statistician Portfolio showcasing skills in cloud infrastructure, data analysis, and more.',
+    url: 'https://www.effiongsamuel.tech',
+    siteName: 'Samuel Effiong Portfolio',
+    images: [
+      {
+        url: 'https://www.effiongsamuel.tech/og-image.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Samuel Effiong - Software Engineer,DevOps, Statistician, Data Science and Analyst Portfolio',
+    description: 'Software Engineer, DevOps Engineer, and Statistician Portfolio showcasing skills in cloud infrastructure, data analysis, and more.',
+    images: ['https://www.effiongsamuel.tech/twitter-image.jpg'],
+  },
+  alternates: {
+    canonical: 'https://effiongsamuel.tech',
+  },
+  other: {
+    'og:image': 'https://effiongsamuel.tech/og-image.jpg',
+    'og:image:width': '1200',
+    'og:image:height': '630',
+    'og:image:alt': 'Samuel Effiong - Software, DevOps, Statistician Portfolio',
+    linkedin: 'https://www.linkedin.com/in/samueleffiongjacob',
+    facebook: 'https://www.facebook.com/samueleffiongjacob/',
+    github: 'https://github.com/samueleffiongjacob/',
+  },
 }
 
 export default function RootLayout({

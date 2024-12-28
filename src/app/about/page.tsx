@@ -191,7 +191,7 @@ import { faLinkedin, faTwitter, faFacebook, faInstagram, faGithub, faWhatsapp, f
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export const metadata: Metadata = {
-  title: 'About Me',
+  title: 'About | Samuel Effiong - Software Engineer,DevOps, Statistician, Data Science and Analyst Portfolio',
   description: 'Learn more about Samuel Effiong, a skilled Software Engineer and DevOps specialist with expertise in Cloud Technologies and Data Science and Analyst.',
 }
 

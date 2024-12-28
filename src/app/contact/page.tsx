@@ -16,7 +16,7 @@ import type { Metadata } from 'next'
 import { ContactForm } from '@/components/contact-form'
 
 export const metadata: Metadata = {
-  title: 'Contact Me',
+  title: 'Contact | Samuel Effiong - Software Engineer,DevOps, Statistician, Data Science and Analyst Portfolio',
   description: 'Get in touch with Samuel Effiong for collaboration, job opportunities, or any inquiries about software engineering,DevOps, Statistics, Data Science and Analyst.',
 }
 
