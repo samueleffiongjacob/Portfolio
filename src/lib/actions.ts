@@ -494,7 +494,6 @@
 // }
 
 
-
 'use server'
 
 import { contactFormSchema } from '@/lib/schema'
@@ -514,12 +513,11 @@ const transporter = nodemailer.createTransport({
 })
 
 // Verify the transporter configuration
-transporter.verify(function (error, success) {
+transporter.verify(function (error) {
   if (error) {
     console.log('Transporter verification error:', error)
-  } else {
-    console.log('Server is ready to take our messages')
   }
+  console.log('Server is ready to take our messages')
 })
 
 export async function contactFormAction(
