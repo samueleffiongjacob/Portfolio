@@ -4,6 +4,7 @@ import { Nav } from '@/components/nav'
 import "./globals.css";
 import { Footer } from '@/components/footer'
 import { FontAwesomeInit } from '@/components/font-awesome-init'
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = Geist({
   subsets: ['latin'],
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Nav />
         <main className="flex-grow">
           {children}
+          <Analytics />
         </main>
         <Footer />
       </body>
