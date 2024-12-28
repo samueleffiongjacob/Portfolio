@@ -5,6 +5,7 @@ import "./globals.css";
 import { Footer } from '@/components/footer'
 import { FontAwesomeInit } from '@/components/font-awesome-init'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   subsets: ['latin'],
@@ -78,6 +79,7 @@ export default function RootLayout({
         <main className="flex-grow">
           {children}
           <Analytics />
+          <SpeedInsights />
         </main>
         <Footer />
       </body>
