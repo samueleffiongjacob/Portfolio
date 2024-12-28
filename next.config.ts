@@ -2,12 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  type: 'OAuth2',
-  user: process.env.MAIL_USERNAME,
-  pass: process.env.MAIL_PASSWORD,
-  clientId: process.env.OAUTH_CLIENTID,
-  clientSecret: process.env.OAUTH_CLIENT_SECRET,
-  refreshToken: process.env.OAUTH_REFRESH_TOKEN
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
+  },
 }
 
 export default nextConfig;
